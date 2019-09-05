@@ -1,0 +1,19 @@
+
+spring:
+  datasource:
+    username: fxiao
+    password: 123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.126.126:3306/fx_db2?useUnicode=true&characterEncoding=UTF-8
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+  thymeleaf:
+    cache: false
+server:
+  port: 8081
+  servlet:
+    context-path: /fx
